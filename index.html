@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>microproject-3</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="parent-container">
+      <h3>calc</h3>
+      <textarea id="textarea" disabled></textarea>
+      <div class="symbol-part">
+        <!-- onclick acts as a event listener when the button is clicked , the function addExpression(symbol) is called  -->
+        <button onclick="addExpression(7)">7</button>
+        <button onclick="addExpression(8)">8</button>
+        <button onclick="addExpression(9)">9</button>
+        <button onclick="deleteText('DEL')">DEL</button>
+        <button onclick="addExpression(4)">4</button>
+        <button onclick="addExpression(5)">5</button>
+        <button onclick="addExpression(6)">6</button>
+        <button onclick="addExpression('+')">+</button>
+        <button onclick="addExpression(1)">1</button>
+        <button onclick="addExpression(2)">2</button>
+        <button onclick="addExpression(3)">3</button>
+        <button onclick="addExpression('-')">-</button>
+        <button onclick="addExpression('.')">.</button>
+        <button onclick="addExpression(0)">0</button>
+        <button onclick="addExpression('/')">/</button>
+        <button onclick="addExpression('*')">x</button>
+        <button onclick="addExpression('')">RESET</button>
+        <button onclick="calculateText()">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
